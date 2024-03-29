@@ -1,0 +1,8 @@
+:root {
+    --primary-color: hsl(176, 88%, 27%);
+    --primaryLight-color: hsla(176, 90%, 35%, 0.234);
+    --black-color: hsl(0, 0%, 0%);
+    --white-color: hsl(0, 0%, 100%);
+    --gray-color: hsl(0, 0%, 40%);
+    --grayLight-color: hsl(0, 0%, 86%);
+}

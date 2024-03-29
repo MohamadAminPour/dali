@@ -1,0 +1,203 @@
+/*start popular product style*/
+
+.popular-product__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    right: 0;
+}
+
+.popular-product {
+    margin: 0 .5rem 5rem .5rem;
+    padding: 1rem 5rem;
+}
+
+
+.popular-product__header-right {
+    margin-right: 2rem;
+}
+
+.popular-product__header-left__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: var(--primaryLight-color);
+    border-radius: 10rem;
+    padding: 0.3rem 1rem;
+}
+
+.popular-product__header-left__link:hover .popular-product__header-left__icon {
+    transform: translate(-.3rem);
+}
+
+.popular-product__header-left__text {
+    margin-bottom: .4rem;
+}
+
+.popular-product__header-left__icon {
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    transition: .4s;
+}
+
+.popular-product__header-text {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    position: relative;
+}
+
+.popular-product__header-text::before {
+    position: absolute;
+    content: "";
+    right: -2rem;
+    bottom: .2rem;
+    background-color: var(--primary-color);
+    width: 15px;
+    height: 15px;
+    border-radius: .2rem;
+    transform: rotate(90deg);
+}
+
+.popular-product__header-span {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 400;
+}
+
+.popular-product__slider-item {
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 240px;
+    height: 270px;
+    padding: .5rem;
+    margin: 2rem .1rem;
+    /* border: 3px solid var(--grayLight-color); */
+    box-shadow: rgba(136, 165, 191, 0.25) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    transition: .4s ease;
+    transition-duration: .4s;
+}
+
+.popular-product__slider-item:hover {
+    transform: translateY(-1rem);
+    box-shadow: rgba(136, 165, 191, 0.50) 6px 2px 16px 0px, rgba(255, 255, 255, 0.9) -6px -2px 16px 0px;
+}
+
+.popular-product__slider-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.popular-product__slider-img {
+    border-radius: 1rem;
+    width: 100%;
+    height: 90%;
+}
+
+.popular-product__slider-text {
+    margin-top: .5rem;
+    color: var(--gray-color);
+}
+
+.owl-nav {
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    font-size: 2rem;
+}
+
+.owl-next,
+.owl-next span {
+    /* background-color: var(--primaryLight-color); */
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    border-radius: 50rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-prev,
+.owl-prev span {
+    /* background-color: var(--primaryLight-color); */
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    border-radius: 50rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-next span,
+.owl-prev span {
+    margin: 0 0 3rem 0 !important;
+}
+
+.owl-next span:hover {
+    color: var(--primary-color) !important;
+    background-color: var(--white-color) !important;
+}
+
+.owl-prev span:hover {
+    color: var(--primary-color) !important;
+    background-color: var(--white-color) !important;
+}
+
+.owl-next,
+.owl-prev {
+    background-color: white !important;
+}
+
+
+/*finish popula product style*/
+
+@media screen and (max-width:1085px) {
+    .popular-product__header-text {
+        font-size: 1rem;
+        color: var(--primary-color);
+        font-weight: 600;
+        position: relative;
+    }
+
+    .popular-product__header-span {
+        font-size: 1rem;
+        color: black;
+        font-weight: 400;
+    }
+
+    .popular-product__header-left__text {
+        font-size: .7rem;
+        margin-top: 0.2rem;
+    }
+
+    .popular-product__header-left__icon {
+        font-size: 1.3rem;
+    }
+
+    .popular-product__header-left__link {
+        padding: 0.2rem .5rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .popular-product {
+        margin: 5rem .5rem 3rem .5rem;
+        padding: 1rem 1rem;
+    }
+}
